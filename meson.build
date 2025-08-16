@@ -19,6 +19,7 @@ project(
     meson_version: '>= 0.61')
 
 cc = meson.get_compiler('c')
+add_project_arguments('-Wno-unused-function', language : 'c')
 pkgconfig = import('pkgconfig')
 pkgconfig_libs = []
 
